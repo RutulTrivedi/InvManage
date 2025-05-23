@@ -1,0 +1,1 @@
+InvManage is a web application for business professionals to manage their inventory.
