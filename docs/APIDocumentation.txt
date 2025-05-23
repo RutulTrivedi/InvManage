@@ -1,0 +1,121 @@
+*** Users ***
+Signup
+	- /api/users/signup
+	- POST
+	- INPUT: {name, email, password}
+Login
+	- /api/users/login
+	- POST
+	- INPUT: {email, password}
+Update
+	- /api/users/update/:id
+	- PUT
+	- INPUT: {name, email, password}
+Get user by id
+	- /api/users/:id
+	- GET
+	- INPUT: -
+
+---------------------------------------------------------------------------
+
+*** Location ***
+Create location
+	- /api/locations/
+	- POST
+	- INPUT: {name, address, userId}
+Update location
+	- /api/locations/:id
+	- PUT
+	- INPUT: {name, address}
+Delete location
+	- /api/locations/:id
+	- DELETE
+	- INPUT: -
+Get all locations by userId
+	- /api/locations/user/:id
+	- GET
+	- INPUT: -
+Get location by locationId
+	- /api/locations/:id
+	- GET
+	- INPUT: -
+
+---------------------------------------------------------------------------
+
+*** Category ***
+Create category
+	- /api/category/
+	- POST
+	- INPUT: {name, description, userId}
+Update category
+	- /api/category/:id
+	- PUT
+	- INPUT: {name, description}
+Delete category
+	- /api/category/:id
+	- DELETE
+	- INPUT: -
+Get all categories by userId
+	- /api/category/user/:id
+	- GET
+	- INPUT: -
+Get category by categoryId
+	- /api/category/:id
+	- GET
+	- INPUT: -
+
+---------------------------------------------------------------------------
+
+*** Product ***
+Create product
+	- /api/products/
+	- POST
+	- INPUT: {name, categoryId, unit, price, description, lowStockThreshold, userId}
+Update product
+	- /api/products/:id
+	- PUT
+	- INPUT: {Fields to update}
+Delete product
+	- /api/products/:id
+	- DELETE
+	- INPUT: -
+Get all products by userId
+	- /api/products/user/:id
+	- GET
+	- INPUT: -
+Get product by productId
+	- /api/products/:id
+	- GET
+	- INPUT: -
+
+---------------------------------------------------------------------------
+
+*** Inventory ***
+Create inventory
+	- /api/inventory/
+	- POST
+	- INPUT: {productId, locationId, userId, currentStock}
+Update inventory
+	- /api/inventory/:id
+	- PUT
+	- INPUT: {currentStock}
+Delete inventory
+	- /api/inventory/:id
+	- DELETE
+	- INPUT: -
+Get inventory by product and location
+	- /api/inventory/product/:productId/location/:locationId
+	- GET
+	- INPUT: -
+Get inventory by product
+	- /api/inventory/product/:productId
+	- GET
+	- INPUT: -
+Get inventory by location
+	- /api/inventory/location/:locationId
+	- GET
+	- INPUT: -
+Get inventory by user
+	- /api/inventory/user/:userId
+	- GET
+	- INPUT: -
