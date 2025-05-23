@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import Cookies from 'js-cookie';
 import EmptyCategory from '../assets/panel/emptycategory.png';
 
-const API_BASE = 'http://localhost:5000/api/category';
+const API_BASE = 'https://invmanage-v22c.onrender.com/api/category';
 
 const CategoryPage = () => {
   const [categories, setCategories] = useState([]);

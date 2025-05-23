@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import Cookies from 'js-cookie';
 import EmptyProduct from '../assets/panel/emptyproduct.png';
 
-const API_BASE = 'http://localhost:5000/api/products';
+const API_BASE = 'https://invmanage-v22c.onrender.com/api/products';
 
 const ProductPage = () => {
   const [products, setProducts] = useState([]);

@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import Cookies from 'js-cookie';
 import EmptyLocation from '../assets/panel/emptylocation.png';
 
-const API_BASE = 'http://localhost:5000/api/locations';
+const API_BASE = 'https://invmanage-v22c.onrender.com/api/locations';
 
 const LocationPage = () => {
   const [locations, setLocations] = useState([]);

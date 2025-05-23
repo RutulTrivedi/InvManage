@@ -14,7 +14,7 @@ const LogsPage = () => {
   const [filterLocation, setFilterLocation] = useState('');
 
   const userId = Cookies.get('userId');
-  const API_BASE = 'http://localhost:5000/api';
+  const API_BASE = 'https://invmanage-v22c.onrender.com/api';
 
   useEffect(() => {
     fetchLogs();
